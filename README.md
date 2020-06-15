@@ -2,6 +2,6 @@
 
 #### Just a code i'm using to investigate interesting servers from my scanner-bot
 
-1. `~$ shodan download twonky.json.gz port:9000 Twonky`
+1. `~$ shodan download --limit 20000 twonky.json.gz port:9000 Twonky`
 2. `~$ shodan parse --fields ip_str,port --separator ":" >> ips.txt`
 3. `~$ python3 tw2html.py`
